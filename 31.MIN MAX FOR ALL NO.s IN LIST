@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main(void) {
+
+	int i,max,min,N,x;
+	printf("Enter N : ");
+	scanf("%d",&N);
+	max=0;
+	min=999;
+	for(i=1;i<=N;i++)
+	{
+		printf("Enter x-%d : ",i);
+		scanf("%d",&x);
+
+		if(max < x)
+			max = x;
+
+		if(min > x)
+			min = x;
+	}
+	printf("\n max = %d",max);
+	printf("\n min = %d",min);
+	return 0;
+}
+
+OUTPUT:
+
+Enter N : 4
+Enter x-1 : 76
+Enter x-2 : 80
+Enter x-3 : 33
+Enter x-4 : 41
+
+ max = 80
+ min = 33
